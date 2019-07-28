@@ -23,9 +23,8 @@ let tableColor = [
 
 function changeColor()
 {
-    let backgrnd = document.querySelector("body");
     let randomColor = Math.floor(Math.random() * tableColor.length);
-    backgrnd.style = tableColor[randomColor]; 
+    document.body.style.backgroundColor = tableColor[randomColor]
 }
 
 let other = document.getElementById("btn");
